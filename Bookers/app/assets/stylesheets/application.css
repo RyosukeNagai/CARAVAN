@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top{
+	margin: 25px 25px;
+}
+.title{
+	font-size: 30px;
+}
+.title-text-item{
+	margin-bottom: 25px;
+	padding-left: 60px;
+}
+a{
+	color: gray;
+}
