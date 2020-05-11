@@ -1,2 +1,22 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+
+<% if flash[:id] %>
+  <div class="flash">
+ 	<%= flash[:id] %>
+  </div>
+<% end %>
+<div class="book-box">
+<div class="book-box1 clearfix">
+<p class="book-title"><b>Title:</b></p>
+<p class="book-text"><%= @book.title %></p>
+</div>
+<div class="book-box1 clearfix">
+<p class="book-title"><b>Body:</b></p>
+<p class="book-text"><%= @book.body %></p>
+</div>
+</div>
+
+<div class="button clearfix">
+<%= link_to "Edit",edit_book_path, class:"switch" %>
+<p class="break">|</p>
+<%= link_to "Back","/books", class:"switch" %>
+</div>

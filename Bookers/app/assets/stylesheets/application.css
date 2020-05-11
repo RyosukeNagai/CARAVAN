@@ -1,33 +1,86 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.clearfix::after{
+	content: "";
+	display: block;
+	clear:both;
+}
+p{
+	font-size: 13px;
+	font-family: "Arial"
+}
 .top{
-	margin: 25px 25px;
+	margin: 30px 30px;
 }
 .title{
-	font-size: 30px;
+	font-size: 28px;
+	font-family: "Arial"
 }
 .title-text-item{
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	padding-left: 60px;
 }
-a{
+.social{
+	margin-left:60px;
 	color: gray;
+}
+.body{
+	font-size: 13px;
+	margin:10px 0;
+}
+table{
+	width: 850px;
+	margin: 15px 0;
+}
+th{
+	margin: 0 auto;
+	padding: 5px 0;
+	padding-right: 100px;
+}
+td{
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.new{
+	margin-top: 10px;
+}
+.titles{
+    font-size: 22px;
+	font-family: "Arial"
+}
+a{
+	color: black;
+}
+head{
+	background-color: red;
+}
+.flash{
+	margin:40px;
+	color: green;
+}
+.switch{
+	float:left;
+}
+.button{
+    margin-left: 25px;
+}
+.break{
+	float:left;
+	margin: 0 3px;
+}
+.book-box{
+ margin:30px 50px;
+}
+.book-box1{
+ margin-bottom: 40px;
+}
+.book-title{
+float:left;
+}
+.book-text{
+	float:left;
 }
