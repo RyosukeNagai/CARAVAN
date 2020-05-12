@@ -18,7 +18,10 @@ end
       if book.save
         flash[:id] = 'Book was successfully created.'
   	    redirect_to book_path(book.id)
-      # else render :new
+       else 
+        @books = Book.all
+        @book = book
+        render :index
 
     end
   end
@@ -33,7 +36,10 @@ end
       if book.update(book_params)
       flash[:id] = 'Book was successfully updated.'
       redirect_to book_path(book.id)
-      # elserender :edit
+
+      else
+        @book = book
+        render :edit
 
     end
   end
