@@ -1,4 +1,6 @@
-class Book < ActiveRecord::Base
-validates :title, presence: true
-validates :body, presence: true
+class Book < ApplicationRecord
+
+
+validates :title, {presence: true}
+validates :body, {presence: true}
 end
